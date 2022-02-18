@@ -16,6 +16,7 @@
           "memory": 512,
           "buildCommand": "yarn rw build api && yarn rw prisma migrate deploy",
           "startCommand": "yarn rw serve api",
+          "healthCheckPath": "/health",
           "envVariables": {
             "DATABASE_URL": {
               "fromService": { "id": "db", "value": "dbConnectionString" }
@@ -26,11 +27,9 @@
           "id": "redwood-web",
           "name": "redwood-web",
           "type": "static",
+          "singlePageApp": true,
           "buildCommand": "yarn rw build web",
-          "outputDirectory": "web/dist",
-          "envVariables": {
-            "DATABASE_URL": {}
-          }
+          "outputDirectory": "web/dist"
         },
         {
           "id": "db",
