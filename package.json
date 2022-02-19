@@ -7,7 +7,7 @@
       "packages/*"
     ]
   },
-  "devDependencies": {
+  "dependencies": {
     "@redwoodjs/core": "v0.45.0"
   },
   "eslintConfig": {
