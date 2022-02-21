@@ -16,6 +16,7 @@
           "memory": 512,
           "buildCommand": "yarn rw build api && yarn rw prisma migrate deploy",
           "startCommand": "yarn rw serve api --port $PORT",
+          "postBuildCommand": "echo 0",
           "healthCheckPath": "/health",
           "envVariables": {
             "DATABASE_URL": {

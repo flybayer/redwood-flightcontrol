@@ -2506,7 +2506,7 @@
   resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.45.0.tgz#57d717edf4607b7be5d7f22674f18a0d2cd60f20"
   integrity sha512-8NMQcWJ1HGNx9GeJJrnWkItvEKFSOOP2dKHEo5UB5RuLni4ua2I/L/tWgmkOEtsL020oDDmkSIAT7qDI5OsIfQ==
 
-"@redwoodjs/cli@0.45.0", "@redwoodjs/cli@v0.45.0":
+"@redwoodjs/cli@v0.45.0":
   version "0.45.0"
   resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.45.0.tgz#2730627f760a8575ae61f5b1797b6bea38284fe7"
   integrity sha512-MZrCWVp/1uGt4iXHGziOHL6T/kqWdofPreaKbLzmny5ADqHXdJR3cCijUoz2YQpLN6w8eFi4rYP3dvCXJ+Makg==

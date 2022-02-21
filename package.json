@@ -7,9 +7,6 @@
       "packages/*"
     ]
   },
-  "dependencies": {
-    "@redwoodjs/cli": "0.45.0"
-  },
   "devDependencies": {
     "@redwoodjs/core": "v0.45.0"
   },
