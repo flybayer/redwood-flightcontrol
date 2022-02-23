@@ -14,8 +14,8 @@
           "type": "fargate",
           "cpu": 0.25,
           "memory": 0.5,
-          "buildCommand": "yarn rw build api && yarn rw prisma migrate deploy",
-          "startCommand": "yarn rw serve api --port $PORT",
+          "buildCommand": "rw build api && rw prisma migrate deploy",
+          "startCommand": "rw serve api --port $PORT",
           "postBuildCommand": "echo 0",
           "healthCheckPath": "/graphql/health",
           "envVariables": {
@@ -29,7 +29,7 @@
           "name": "Redwood Web",
           "type": "static",
           "singlePageApp": true,
-          "buildCommand": "yarn rw build web",
+          "buildCommand": "rw build web",
           "outputDirectory": "web/dist"
         },
         {
