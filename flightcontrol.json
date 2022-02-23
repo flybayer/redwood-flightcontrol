@@ -13,11 +13,11 @@
           "name": "Redwood API",
           "type": "fargate",
           "cpu": 0.25,
-          "memory": 512,
+          "memory": 0.5,
           "buildCommand": "yarn rw build api && yarn rw prisma migrate deploy",
           "startCommand": "yarn rw serve api --port $PORT",
           "postBuildCommand": "echo 0",
-          "healthCheckPath": "/health",
+          "healthCheckPath": "/graphql/health",
           "envVariables": {
             "DATABASE_URL": {
               "fromService": { "id": "db", "value": "dbConnectionString" }
